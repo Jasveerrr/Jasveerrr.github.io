@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+@font-face {
+    font-family: SF-PRO;
+    src: url("../../fonts/SFPRODISPLAYREGULAR.OTF");
+}
+@font-face {
+    font-family: REG-F;
+    src:url("../../fonts/ClashDisplay-Regular.otf");
+}
+@font-face {
+    font-family: MED-F;
+    src:url("../../fonts/ClashDisplay-Medium.otf");
+}
+main{
+    min-height: 100vh;
+    background-color: #E8E8E8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#container{
+    height: 690px;
+    width: 1230px;
+    background-color: #FFFFFF;
+    border-radius: 38px;
+    overflow: hidden;
+}
+#navbar{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.tags{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 28px;
+    gap: 15px;
+    font-family: MED-F;
+}
+.tags a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+.left-tag{
+    padding-left: 20px;
+    padding-top: 28px;
+}
+.left-tag a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    padding-left: 30px;
+}
+.left-tag i{
+    font-size: 30px;
+    color: #898ED0;
+    font-family: SF-PRO;
+    
+}
+.right-tag{
+    font-family: MED-F;
+    padding-top: 28px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    white-space: nowrap;
+
+}
+
+.right-tag a{
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+
+}
+.cta{
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    background-color: #2B313F;
+    padding: 10px 14px 13px 18px;
+    border-radius: 999px;
+    font-family: MED-F;
+    
+}
+.cta-text {
+    font-size: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: SF-PRO;
+}
+.cta-icon{
+    background-color: #898ED0;
+    color: black;
+    font-size: 18px;
+    line-height: 1;
+    padding: 10px 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+#main-grid{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns:  50% 25% 25%;
+    grid-template-rows: 1fr 1fr 0.5fr;
+    grid-template-areas: "left top-center top-center "
+                         "left  bottom-center bottom-right";
+}
+.left{
+    grid-area:left;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.bottom-center{
+    grid-area: bottom-center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 13px;
+}
+.top-center{
+    grid-area: top-center;
+}
+
+.bottom-right{
+    grid-area:bottom-right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 13px;
+}
+.pill{
+    display: inline-flex;
+    width: 120px;
+    height: 48px;
+    border-radius: 999px;
+    background-image: url("https://www.idea11.com.au/wp-content/uploads/2024/12/importance-of-data-analytics-and-ai-in-business.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 16px;
+}
+.left h1{
+    font-family: SF-PRO;
+    font-size: 50px;
+    line-height: 1.05;
+    margin-top: 24px;
+    display: inline;
+}
+.working{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 55px;
+    border-radius: 999px;
+    margin-left: 40px;
+    background-color: transparent;
+    border: 1.5px solid black;
+    font-size: 16px;
+    word-spacing: 6px;
+    color: black;
+}
+.working i{
+    padding-right: 20px;
+    font-size: 35px;
+}
+#contact{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 80px;
+    gap: 8px;
+    width: 120px;
+    height: 48px;
+    border-radius: 999px;
+    background-color: #1F243A;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+#contact i{
+    font-size: 20px;
+    line-height: 1;
+}
+#contactus{
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-family: MED-F;
+    color: black;
+    word-spacing: 2.4px;
+    gap: 20px;
+}
+.info{
+    padding-top: 20px;
+    padding-right: 60px;
+    font-family: REG-F;
+    font-size: 16px;
+}
+.top-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-card{
+    height: 300px;
+    width: 600px;
+    margin: 20px 20px;
+    background-image: url("https://devoxsoftware.com/wp-content/uploads/2024/02/google-deepmind-mDPMZYyQuIQ-unsplash.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+}
+.img-card2{
+    width: 200px;
+    height: 240px;
+    background-image: url("https://cloudonair.withgoogle.com/api/assets?path=/gs/gweb-gc-gather-production.appspot.com/files/ABgVH88dwyevIKN-63TN-2RLvLlSufpIolTKIHPUiK-_6FI_fx-PCdiBX6ZNi76Z6IC5R0MF2ZlfHAQ.qRaMp5I6ahjAHOSv");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+}
+.img-card3{
+    width: 200px;
+    height: 240px;
+    background-image: url("https://www.mensafoundation.org/wp-content/uploads/pexels-googledeepmind-17483869-scaled-1440x1440.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+}

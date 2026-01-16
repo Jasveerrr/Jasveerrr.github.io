@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    
+}
+@font-face {
+    font-family: REG-F;
+    src:url("../../fonts/ClashDisplay-Medium.otf");
+}
+@font-face {
+    font-family: SF-PRO;
+    src: url("../../fonts/SFPRODISPLAYREGULAR.OTF");
+}
+@font-face {
+    font-family: SF-PRO-LI;
+    src: url("../../fonts/SFPRODISPLAYLIGHTITALIC.OTF");
+}
+#main {
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+#nav{
+    height: 70px;
+    width: 100%;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+}
+#nav a{
+    color: Black;
+    text-decoration: none;
+    font-family:REG-F;
+    
+}
+.icon i{
+    font-size: 22px;
+}
+#mid{
+     width: 100%;
+     min-height: 100vh;         
+     padding-top: 40px;         
+     padding-bottom: 420px;      
+
+     background: #F5F5F7;
+     font-family: SF-PRO;
+     font-weight: bolder;
+     text-align: center;
+     font-size: 35px;
+
+     background-image: url("https://www.apple.com/in/home/heroes/iphone-family/images/hero_iphone_family__fuz5j2v5xx6y_small_2x.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: bottom center;
+ }
+
+#mid a{
+    text-decoration: none;
+    font-size: 23px;
+    color: black;
+}
+#links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+    
+}
+#links button{
+    background: #0171E3;
+    color: white;
+    padding:10px 15px ;
+    border: none;
+    margin-top: 13px;
+    font-size: 20px;
+    border-radius: 25px;
+    font-weight: lighter;
+    font-family:SF-PRO;
+    
+}
+#watch {
+    color: black;
+    width: 100%;
+    min-height: 120vh;       
+    padding-top: 120px;      
+    padding-bottom: 400px;    
+
+    background: #F5F5F7;
+    font-family: SF-PRO;
+    text-align: center;
+
+    background-image: url("https://www.apple.com/in/home/heroes/apple-watch-ny/images/hero_apple_watch_ny__c8f1tzaoa72a_small_2x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+#watch h1{
+    font-size:50px ;
+    font-weight: bolder;
+    padding-bottom: 15px;
+}
+#watch h1 i{
+    margin-right: 15px;  
+}
+#watch a{
+    text-decoration: none;
+    font-size: 23px;
+    color: white;
+    font-weight: lighter;
+}
+#watch h3{
+    font-size:23px ;
+    font-family:SF-PRO-LI;
+    opacity: 0.85;
+}
+#links2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+}
+#links2 button{
+    background: #0171E3;
+    color: white;
+    padding:12px 20px ;
+    border: none;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 25px;
+    font-weight: lighter;
+    font-family:SF-PRO;
+
+}
+#divider{
+    width: 100%;
+    height: 10px;          
+ 
+}
+#ipad{
+    width: 100%;
+    min-height: 120vh;
+    background-image: url("https://www.apple.com/v/ipad-air/af/images/overview/hero/hero_intro_logo__bnacncm3ehma_small_2x.png"),
+    url("https://www.apple.com/v/ipad-air/af/images/overview/hero/hero_endframe__fvm22b45e5me_small_2x.png");
+    background-position: top center,bottom center;
+    background-size: 16%,30%;
+    background-repeat: no-repeat;
+    margin-top: 60px;
+    text-align: center;
+
+}
+#ipad h3{
+    text-align: center;
+    padding-top: 70px;
+    font-family: SF-PRO-LI;
+    font-size: 30px
+}
+#links3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+}
+#links3 button{
+    background: #0171E3;
+    color: white;
+    padding:12px 20px ;
+    border: none;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 25px;
+    font-weight: lighter;
+    font-family:SF-PRO;
+}
+
+#twobande{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+}
+
+#fitness{
+    width: 50%;
+    height: 100%;
+    background: #F5F5F7;
+    text-align: center;
+    padding-top: 40px;
+    background-image: url("https://www.apple.com/v/home/ck/images/promos/apple-fitness-plus-ny/promo_apple_fitness_plus_ny__di8hyqkgekya_small.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+#fitness h2{
+    font-size: 25px;
+    font-family: SF-PRO-LI;
+}
+#fitness h4{
+    padding-top: 10px;
+    font-size: 15px;
+    font-family: SF-PRO-LI;
+}
+
+#macbook{
+    width: 50%;
+    height: 100%;
+    background: #F5F5F7;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    background-image: url("https://www.apple.com/v/home/ck/images/promos/macbook-pro-m5/promo_macbook_pro_m5__gnwzdhijhm6a_small.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+
+

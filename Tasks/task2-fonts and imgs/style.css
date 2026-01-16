@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background: #fbfafa;
+}
+@font-face {
+    font-family: porschekeliye;
+    src: url("../../fonts/OrangeAvenueDEMO-Regular.otf");
+}
+@font-face {
+    font-family: f2por;
+    src:url("../../fonts/PlayfairDisplay-Regular.ttf");
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+.portitle{
+    text-align: center;
+    padding-top: 30px;
+    font-family: f2por;
+    font-weight: bolder;
+}
+.portitle2{
+    text-align: center;
+    font-family: porschekeliye;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#btn{
+    padding: 12px 30px;
+    position: absolute;
+    right: 70px;
+    bottom: 70px;
+    background: #3e3b3b;  
+    color: white;
+
+    border: 1px solid rgba(255, 255, 255, 0.45); 
+
+    border-radius: 8px;
+    padding: 12px 30px;
+
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+
+    transition: all 0.25s ease;
+
+}
+
+
+
+#btn:hover {
+    background: rgba(14, 1, 1, 0.22);
+}
+
+#btn:active {
+    transform: scale(0.97);
+    background: rgba(255, 255, 255, 0.32);
+}
+
+
+
+

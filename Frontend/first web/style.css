@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;  
+    box-sizing: border-box;
+    background: black;
+}
+html,body {
+    height: 100%;
+    width: 100%;
+}  /*  YE HAMESHA LIKHNA HAI CSS MEI SABSE PHELE*/
+
+
+@font-face {
+    font-family: horror;
+    src: url("../../fonts/Berosong-Regular.ttf");
+}
+
+@font-face {
+    font-family: LuxuryVala;
+    src:url("../../fonts/Zaslia.otf");
+}
+@font-face {
+    font-family: GamifyVala;
+    src: url("../../fonts/GankerStorm-Regular.ttf");
+}
+@font-face {
+    font-family: Sherrrr;
+    src: url("../../fonts/NeueMachina-Regular_DQCmjH1st.ttf");
+}
+p{
+    color: yellow;
+    font-size: 27px;
+    font-family: LuxuryVala;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    text-transform: capitalize;
+}
+.words{
+    color: pink;
+    background: black;
+    text-align: center;
+    height: 35px;
+    font-family:GamifyVala;
+}
+#h2kaMaal{
+    color: yellow;
+}
+.myname{
+    font-size: 50px;
+    font-family: horror;
+    width: 70px;
+    text-align: center;
+    margin: 0 auto;
+    color: #c90404;
+}
+.list{
+    font-size: 22px;
+    font-family: Sherrrr;
+    width: 70px;
+    text-align: left;
+    color: aquamarine;
+}
+.alag{
+    color: White;
+    font-size: 27px;
+    font-family: LuxuryVala;
+    font-weight: 900;
+    font-style: italic;
+    text-align: left;
+    text-transform: uppercase;
+}
+.dhoom{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+iframe{
+    display: block;
+    margin: auto;
+}

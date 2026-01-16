@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: REG-F;
+    src:url("../../fonts/ClashDisplay-Medium.otf");
+}
+@font-face {
+    font-family: SF-PRO;
+    src: url("../../fonts/SFPRODISPLAYREGULAR.OTF");
+}
+
+#main{
+    width: 100%;
+    background: rgba(255,255,255,0.85);
+    font-family: SF-PRO;
+}
+
+#nav{
+    margin-top: 10px;
+    height: 50px;
+    background:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    border: 1px solid black;
+
+}
+
+#nav a{
+    text-decoration: none;
+    color: black;
+    font-family: REG-F;
+    font-size: 20px;
+}
+
+#shoes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+.shoe-card{
+    width: 400px;
+    background: #f5f5f5;
+    border-radius: 14px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.shoe-img{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shoe-img img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.shoe-info{
+    margin-top: 16px;
+}
+
+.shoe-type{
+    font-size: 14px;
+    color: #666;
+}
+
+.shoe-info h3{
+    font-size: 18px;
+    margin: 6px 0;
+}
+
+.badge{
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 14px;
+    background: #e5e5e5;
+    border-radius: 20px;
+    font-size: 12px;
+}
+#logo{
+
+    display: flex;
+    align-items: center;
+}
+
+#logo svg{
+    height: 52px;
+    padding-left: 40px;
+    width: auto;
+    fill: black;
+    display: block;
+
+}.nav-links{
+     display: flex;
+    
+     gap: 32px;
+ }
+
+.nav-icons{
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-right: 40px;
+}
+
