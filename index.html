@@ -24,16 +24,27 @@
 
     /* HERO */
     .hero {
-      height: 60vh;
+      min-height: 55vh;
       display: flex;
       align-items: center;
       justify-content: center;
+      text-align: center;
     }
 
     .hero h1 {
-      font-size: clamp(3rem, 10vw, 8rem);
-      font-weight: 700;
-      letter-spacing: -0.05em;
+      font-size: clamp(3.5rem, 11vw, 9rem);
+      font-weight: 800;
+      letter-spacing: -0.06em;
+      background: linear-gradient(180deg, #000 30%, #555);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      margin-top: 0.8rem;
+      font-size: 1rem;
+      color: #666;
+      letter-spacing: 0.02em;
     }
 
     /* LINKS */
@@ -43,33 +54,33 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
-      padding-bottom: 4rem;
+      padding-bottom: 5rem;
     }
 
     /* CARD */
     .card {
       text-decoration: none;
       color: inherit;
-      border-radius: 22px;
+      border-radius: 24px;
       overflow: hidden;
       background: #f5f5f7;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
     }
 
     .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 24px 50px rgba(0,0,0,0.15);
+      transform: translateY(-12px);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.18);
     }
 
     .card img {
       width: 100%;
-      height: 190px;
+      height: 200px;
       object-fit: cover;
       display: block;
     }
 
     .card-content {
-      padding: 1.3rem;
+      padding: 1.4rem;
     }
 
     .card-content h2 {
@@ -80,12 +91,13 @@
     .card-content p {
       font-size: 0.95rem;
       color: #555;
-      margin-bottom: 1rem;
+      margin-bottom: 1.1rem;
     }
 
     .card-content span {
       font-size: 0.9rem;
       font-weight: 600;
+      letter-spacing: 0.03em;
     }
   </style>
 </head>
@@ -93,7 +105,10 @@
 
 <!-- HERO -->
 <section class="hero">
-  <h1>Jasveer</h1>
+  <div>
+    <h1>Jasveer</h1>
+    <p>Frontend Experiments · UI Clones · Clean Web</p>
+  </div>
 </section>
 
 <!-- PROJECT LINKS -->
@@ -103,8 +118,8 @@
     <img src="apple-clone.png" alt="Apple Landing Page">
     <div class="card-content">
       <h2>Apple Landing Page</h2>
-      <p>Clean Apple-style UI clone</p>
-      <span>Click →</span>
+      <p>Minimal Apple-style UI clone</p>
+      <span>View Project →</span>
     </div>
   </a>
 
@@ -112,8 +127,8 @@
     <img src="nike.png" alt="Nike Landing Page">
     <div class="card-content">
       <h2>Nike Landing Page</h2>
-      <p>Brand-focused landing design</p>
-      <span>Click →</span>
+      <p>Bold brand-focused landing design</p>
+      <span>View Project →</span>
     </div>
   </a>
 
@@ -122,7 +137,16 @@
     <div class="card-content">
       <h2>Modern Landing Page</h2>
       <p>Responsive marketing layout</p>
-      <span>Click →</span>
+      <span>View Project →</span>
+    </div>
+  </a>
+
+  <a href="https://jasveerrr.github.io/Tasks/task3-sweaters/" target="_blank" class="card">
+    <img src="proj3.jpeg" alt="Sweaters Project">
+    <div class="card-content">
+      <h2>Sweaters UI</h2>
+      <p>Fashion-style layout & grid practice</p>
+      <span>View Project →</span>
     </div>
   </a>
 
