@@ -13,23 +13,120 @@
     }
 
     body {
-      height: 100vh;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #ffffff;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* HERO */
+    .hero {
+      height: 60vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #fff;
-      color: #000;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
-    h1 {
+    .hero h1 {
       font-size: clamp(3rem, 10vw, 8rem);
       font-weight: 700;
       letter-spacing: -0.05em;
     }
+
+    /* LINKS */
+    .links {
+      width: 90%;
+      max-width: 1100px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding-bottom: 4rem;
+    }
+
+    /* CARD */
+    .card {
+      text-decoration: none;
+      color: inherit;
+      border-radius: 22px;
+      overflow: hidden;
+      background: #f5f5f7;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 24px 50px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 1.3rem;
+    }
+
+    .card-content h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    .card-content span {
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
   </style>
 </head>
 <body>
-<h1>Jasveer</h1>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Jasveer</h1>
+</section>
+
+<!-- PROJECT LINKS -->
+<section class="links">
+
+  <a href="https://jasveerrr.github.io/Tasks/task4apple/" target="_blank" class="card">
+    <img src="apple-clone.png" alt="Apple Landing Page">
+    <div class="card-content">
+      <h2>Apple Landing Page</h2>
+      <p>Clean Apple-style UI clone</p>
+      <span>Click →</span>
+    </div>
+  </a>
+
+  <a href="https://jasveerrr.github.io/Tasks/task5-nike/" target="_blank" class="card">
+    <img src="nike.png" alt="Nike Landing Page">
+    <div class="card-content">
+      <h2>Nike Landing Page</h2>
+      <p>Brand-focused landing design</p>
+      <span>Click →</span>
+    </div>
+  </a>
+
+  <a href="https://jasveerrr.github.io/Tasks/task7-LANDING/" target="_blank" class="card">
+    <img src="landing.jpeg" alt="Landing Page">
+    <div class="card-content">
+      <h2>Modern Landing Page</h2>
+      <p>Responsive marketing layout</p>
+      <span>Click →</span>
+    </div>
+  </a>
+
+</section>
+
 </body>
 </html>
