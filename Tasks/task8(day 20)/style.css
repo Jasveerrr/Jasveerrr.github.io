@@ -9,10 +9,239 @@ html, body {
   height: 100%;
 }
 
+body {
+  background-color: #121212;
+}
+
+html {
+  font-size: clamp(14px, 1.2rem, 18px);
+}
+
+@font-face {
+  font-family: "Chillax";
+  src: url("../../fonts/Chillax-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../../fonts/RobotoMono-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto Mono Light";
+  src: url("../../fonts/RobotoMono-Thin.ttf");
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../../fonts/Satoshi-Light.woff") format("woff");
+}
 main {
-  height: 100vh;
-  width: 100vw;
-  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section {
+  max-width: 1800px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section .top {
+  width: 100%;
+}
+main section .top img {
+  width: 100%;
+  border-radius: 13px;
+}
+main section .bottom {
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  font-family: Satoshi;
+  background-color: #1E1E1E;
+  border-radius: 13px;
+  font-size: 1rem;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+main section .bottom p {
+  padding-top: 0.6rem;
+  padding-left: 0.5rem;
+}
+main section .bottom .bottom-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+main section .bottom .bottom-inner h1 {
+  font-size: 2rem;
+  line-height: 3.1rem;
+  color: rgb(244, 242, 237);
+  font-family: Chillax, SansSerif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+main section .bottom .bottom-inner p {
+  opacity: 0.8;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-family: Satoshi;
+  color: #9B9A96;
+  opacity: 0.8;
+}
+main section .bottom .bottom-inner button {
+  width: fit-content;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  color: rgb(244, 242, 237);
+  gap: 0.5rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-family: Satoshi;
+}
+main section .bottom .bottom-inner i {
+  font-size: 2rem;
+  background: transparent;
+}
+main .stats {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10.5rem 10.5rem;
+  grid-template-rows: 4.3rem 4.3rem;
+  grid-template-areas: "left right" "bleft bright";
+}
+main .stats h3 {
+  color: #9B9A96;
+  font-family: "Roboto Mono";
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+main .stats h1 {
+  color: rgb(244, 242, 237);
+  text-align: center;
+  font-size: 2.25rem;
+  font-family: Chillax;
+  font-weight: lighter;
+}
+main .stats .clients {
+  grid-area: left;
+}
+main .stats .happyC {
+  grid-area: bleft;
+}
+main .stats .followers {
+  grid-area: bright;
+}
+main .stats .projects {
+  grid-area: right;
+}
+main .view2 {
+  width: 100%;
+  padding: 1rem;
+}
+main .view2 .top {
+  width: 100%;
+}
+main .view2 img {
+  width: 100%;
+  border-radius: 13px;
+}
+main .view2 .bottom {
+  border-radius: 13px;
+  width: 100%;
+  gap: 4rem;
+}
+main .view2 .bottom h3 {
+  font-family: "Roboto Mono Light";
+  text-transform: uppercase;
+}
+main .view2 .bottom .bottom-inner {
+  gap: 4rem;
+}
+main .view2 .bottom .bottom-inner h2 {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: rgb(244, 242, 237);
+  font-family: Chillax, SansSerif;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+main .view2 .bottom .bottom-inner .para {
+  font-size: 10px;
+  font-family: Satoshi;
+  text-transform: none;
+}
+
+@media (min-width: 768px) {
+  main .stats {
+    display: grid;
+    grid-template-columns: 20rem 20rem;
+    grid-template-rows: 5.5rem 5.5rem;
+    grid-template-areas: "lf rf" "bl rl";
+  }
+  main .stats .clients {
+    grid-area: lf;
+  }
+  main .stats .happyC {
+    grid-area: bl;
+  }
+  main .stats .followers {
+    grid-area: rl;
+  }
+  main .stats .projects {
+    grid-area: rf;
+  }
+}
+@media (min-width: 1024px) {
+  main section {
+    flex-direction: row;
+  }
+  main section .top, main section .bottom {
+    width: 50%;
+  }
+  main section .bottom {
+    justify-content: space-between;
+  }
+  main section .bottom .bottom-inner {
+    padding: 3rem;
+  }
+  main section .bottom .bottom-inner h1 {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+  main section .bottom .bottom-inner p {
+    font-size: 1.2rem;
+  }
+  main .stats {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+  }
+  main .view2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  main .view2 .bottom-inner .para {
+    display: flex;
+    flex-direction: row;
+    line-height: 28.8px;
+    font-size: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

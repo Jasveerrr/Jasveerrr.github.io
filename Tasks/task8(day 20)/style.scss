@@ -8,9 +8,265 @@ html, body{
     width: 100%;
     height: 100%;
 }
-main{
-  height: 100vh;
-  width: 100vw;
-  background-color: black;
+body{
+  background-color: #121212
+}
+html{
+  font-size: clamp(14px,1.2rem,18px);
+}
+@font-face {
+  font-family: "Chillax";
+  src: url("../../fonts/Chillax-Regular.woff") format("woff");
 
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src:url("../../fonts/RobotoMono-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto Mono Light";
+  src:url("../../fonts/RobotoMono-Thin.ttf");
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../../fonts/Satoshi-Light.woff") format("woff");
+
+}
+@mixin display($gap:0rem){
+  display: flex;
+flex-direction: column;
+gap: $gap;
+}
+main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  section{
+    max-width: 1800px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    width: 100%;
+    padding: 1rem;
+    @include display(1rem);
+
+
+    .top{
+      width: 100%;
+
+      img{
+        width: 100%;
+        border-radius: 13px;
+      }
+    }
+
+    .bottom{
+      width: 100%;
+      padding: 1rem;
+      color: white;
+      font-family: Satoshi;
+      background-color: #1E1E1E;
+      border-radius: 13px;
+      font-size: 1rem;
+      font-weight: bolder;
+      letter-spacing: 1px;
+      @include display(4rem);
+
+      p{
+        padding-top: 0.6rem;
+        padding-left: 0.5rem;
+      }
+
+      .bottom-inner{
+        @include display(0.8rem);
+        h1{
+          font-size: 2rem;
+          line-height: 3.1rem;
+          color: rgb(244, 242, 237);
+          font-family: Chillax, SansSerif;
+          font-weight:400 ;
+          text-transform: uppercase;
+        }
+        p{
+          opacity: 0.8;
+          font-size: 1.25rem;
+          line-height:2rem ;
+          font-family: Satoshi;
+          color: #9B9A96;
+          opacity: 0.8;
+        }
+        button{
+          width: fit-content;
+          padding: 10px;
+          background-color: transparent;
+          border: none;
+          font-size: 0.8rem;
+          font-weight: 400;
+          line-height: 1.3rem;
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+          color: rgb(244, 242, 237);
+          gap:0.5rem;
+          letter-spacing:1px;
+          cursor: pointer;
+          font-family: Satoshi;
+        }
+        i{
+          font-size: 2rem;
+          background: transparent;
+      }
+      }
+    }
+  }
+
+
+  .stats{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10.5rem 10.5rem;
+    grid-template-rows:4.3rem 4.3rem ;
+
+    grid-template-areas:"left right"
+                         "bleft bright";
+    h3{
+      color: #9B9A96;
+      font-family: "Roboto Mono";
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 0.875rem;
+    }
+    h1{
+      color: rgb(244, 242, 237);
+      text-align: center;
+      font-size: 2.25rem;
+      font-family: Chillax;
+      font-weight: lighter;
+    }
+    .clients{
+      grid-area:left;
+    }
+    .happyC{
+      grid-area: bleft;
+    }
+    .followers{
+      grid-area: bright;
+    }
+    .projects{
+      grid-area: right;
+    }
+  }
+  .view2{
+    width: 100%;
+    padding: 1rem;
+    .top{
+      width: 100%;
+
+    }
+    img{
+      width: 100%;
+      border-radius: 13px;
+    }
+    .bottom{
+      border-radius: 13px;
+      width: 100%;
+      gap: 4rem;
+
+      h3{
+        font-family: "Roboto Mono Light";
+        text-transform: uppercase;
+      }
+      .bottom-inner{
+        gap: 4rem;
+
+
+
+        h2{
+          font-size: 2rem;
+          line-height: 2.6rem;
+          color: rgb(244, 242, 237);
+          font-family: Chillax, SansSerif;
+          font-weight:100 ;
+          text-transform: uppercase;
+
+        }
+        .para{
+          font-size: 10px;
+          font-family: Satoshi;
+          text-transform: none;
+        }
+      }
+    }
+  }
+
+}
+@media (min-width: 768px) {
+  main {
+    .stats{
+      display: grid;
+      grid-template-columns:  20rem 20rem;
+      grid-template-rows: 5.5rem 5.5rem;
+      grid-template-areas:"lf rf"
+                          "bl rl";
+      .clients{
+        grid-area:lf;
+      }
+      .happyC{
+        grid-area: bl;
+      }
+      .followers{
+        grid-area: rl;
+      }
+      .projects{
+        grid-area: rf;
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  main{
+    section{
+      flex-direction: row;
+
+      .top,.bottom{
+        width: 50%;
+      }
+      .bottom{
+        justify-content: space-between;
+
+        .bottom-inner{
+          padding: 3rem;
+          h1{
+            font-size: 3.5rem;
+            line-height: 5rem;
+          }
+          p{
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+    .stats{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 2rem;
+    }
+    .view2{
+      display: flex;
+      flex-direction: row-reverse;
+
+      .bottom-inner{
+        .para{
+          display: flex;
+          flex-direction: row;
+          line-height: 28.8px;
+          font-size: 1.2rem;
+
+        }
+      }
+    }
+  }
 }
