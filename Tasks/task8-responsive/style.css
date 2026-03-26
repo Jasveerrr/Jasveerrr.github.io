@@ -96,6 +96,7 @@ main section .bottom .bottom-inner p {
   opacity: 0.8;
 }
 main section .bottom .bottom-inner button {
+  width: -moz-fit-content;
   width: fit-content;
   padding: 10px;
   background-color: transparent;
@@ -242,6 +243,4 @@ main .view2 .bottom .bottom-inner .para {
     line-height: 28.8px;
     font-size: 1.2rem;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
