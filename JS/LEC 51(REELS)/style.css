@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+main{
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+}
+section{
+  height: 100%;
+  width: 400px;
+  background-color: transparent;
+  border-radius: 15px;
+  margin: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+
+}
+.allreels{
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  overflow: auto;
+  
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.reels{
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.reels video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+
+}
+.reels .bottom{
+  width: 100%;
+  padding: 30px 10px;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  padding: 20px 90px 20px 15px;
+  z-index: 2;
+}
+.bottom .user{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom:10px ;
+}
+.bottom .user img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+
+}
+.bottom .user button{
+  height: 20px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  font-weight: 550;
+} 
+.bottom .user h4{
+  font-weight: 300;
+  color: white;
+}
+.bottom .caption{
+  font-weight: 250;
+  color: white;
+  max-width: 85%;
+  line-height: 1.35;
+  word-break: break-word;
+}
+.right{
+  font-size: 30px;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  bottom: 1%;
+  color: white;
+  z-index: 3;
+}
+.right i{
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.right h6{
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 3px;
+}
+.right h4{
+  cursor: pointer;
+  margin-bottom: 2px;
+}
+.right>div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.love{
+  color: crimson;
+}
+.right>div h4{
+  pointer-events: none;
+
+}
+.right>div h6{
+  pointer-events: none;
+}
