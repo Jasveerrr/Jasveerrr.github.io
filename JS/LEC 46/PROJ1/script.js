@@ -6,7 +6,6 @@ const main = document.querySelector('main');
 const cursor = document.querySelector('#cursor');
 
 
-img.addEventListener('dblclick',function(){
   
   love.style.opacity=1;
   love.style.transform='translate(-50%,-50%) scale(1) rotate(0deg)'
@@ -20,7 +19,7 @@ img.addEventListener('dblclick',function(){
 love.style.transform = 'translate(-50%,-50%) scale(0) rotate(-60deg)'
 
   },800)
-})
+
 
 var check=0;
 follow.addEventListener('click',()=>{

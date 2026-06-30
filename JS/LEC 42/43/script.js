@@ -111,6 +111,7 @@ console.log(naam);
 
 
 // DOM 
+
 //! QUERY SELECTOR 
 var h1= document.querySelector('h1') // isse h1 select ho gaya 
 h1.addEventListener('click',function(){
