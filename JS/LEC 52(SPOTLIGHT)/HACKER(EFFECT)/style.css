@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(16, 255, 16);
+  font-size: 80px;
+}
+.hack{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 30px;
+  width: 75%;
+  padding: 40px 20px;
+  text-align: center;
+}

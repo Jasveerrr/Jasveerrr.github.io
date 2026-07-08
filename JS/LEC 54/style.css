@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+@property --rotate{
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+@keyframes animate{
+  from{
+    --rotate:0deg;
+  }
+  to{
+    --rotate:360deg;
+  }
+}
+.box{
+  width: 400px;
+  color: white;
+  padding-inline: 20px;
+  padding-bottom: 20px;
+  box-shadow:  0 0 0px rgb(0, 115, 111);
+  border-radius: 20px;
+  padding-top: 70px;
+  background: linear-gradient(black) padding-box,
+  conic-gradient(from var(--rotate), black , rgb(0, 247, 222),black) border-box ;
+  border: 0px solid rgba(255, 255, 255, 0);
+  animation: animate 5s linear infinite;
+  animation-play-state: paused;
+  transition: all 0.3s linear;
+
+}
+.box:hover{
+  cursor: pointer;
+  animation-play-state: running;
+  border-width: 5px;
+  box-shadow: 0 0 30px rgb(0, 115, 111);;
+}
+.box img{
+  width: 100%;
+  height: 100% ;
+  object-fit:cover;
+  
+}
+
+  .box h1{
+    color: white;
+    margin-top: 15px;
+    opacity:0;
+  }
+  
+  .box p{
+    opacity: 0;
+    color: white;
+    margin-top: 8px;
+  }
+
+.box:hover h1{
+  opacity: 1;
+}
+.box:hover p{
+    opacity:1;
+}
