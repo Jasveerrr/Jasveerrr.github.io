@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+main{
+  height: 100%;
+  width: 100%;
+  background-color: darkcyan;
+  background-image: url("./assests/macos-.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.taskbar{
+  height: 5%;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  cursor: default;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* .main-screen{
+
+}
+.apps-footer{
+
+} */
+.taskbar-left{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  font-size: 14px;
+
+}
+.taskbar-right{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  font-size: 15px;
+
+}
+.active-app{
+  font-weight: 700;
+}
+.apple-logo{
+  font-size: 17px;
+}
+.menu-separator {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 5px 4px;
+
+}
+.menu-dropdown {
+  margin-top: 10px;
+  display: none;
+  position: fixed;
+  padding: 6px;
+  background: rgba(45, 55, 65, 0.82);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  color: white;
+  z-index: 1000;
+}
+
+.menu-dropdown.show {
+  display: block;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.menu-item:hover {
+  background: #0a84ff;
+}
+.menu-item {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: default;
+}
+.apps-footer {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  background: rgba(30, 30, 30, 0.45);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  cursor: default;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.dock-app {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.2s ease-out;
+  transform-origin: bottom center;
+}
+
+.dock-app img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
