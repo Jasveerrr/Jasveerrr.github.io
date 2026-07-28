@@ -31,7 +31,6 @@ const App = () => {
         className="bg-white p-6 rounded-lg shadow-md w-80 flex flex-col gap-4"
       >
         <h2 className="text-2xl font-bold text-center">Simple Form</h2>
-``
         <input
           type="text"
           placeholder="Enter Name"
